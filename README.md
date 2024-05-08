@@ -3,7 +3,7 @@ Record LLMs Journey
 
 
 
-**05-07-2024:** Make CUDA work
+**05-07-2024:** Make CUDA work, install ubuntu
 
 - What works
 
@@ -19,13 +19,18 @@ Record LLMs Journey
       - [Update VS Code python interpreter](https://stackoverflow.com/questions/43351596/activating-anaconda-environment-in-vscode)
       - Anaconda-JupyterNotebook, and VS code: torch.cuda.is_available()
       - [Pytorch Verification](https://github.com/BAI-Yeqi/PyTorch-Verification/tree/master)
+  - [Install ubuntu 24.04](https://www.minitool.com/partition-disk/install-ubuntu-on-windows-11.html)
+    - Can not find duel system option: bcdedit /set "{bootmgr}" path \EFI\ubuntu\grubx64.efi
 
-  **05-05-2024:** Order PC at 04-29 (4060 Ti 16G), arrive 04-30, Setup 05-05. Initial installation
+- What does not work
+  - Ubuntu does not have wifi. 
 
-  - What works
-    - Check GPU status: nvidia-smi
-    - Install: Chrome, Anaconda (Pytorch), Docker, Ollama, OpenWebUI, 
-    - Cuda: 12.1.  Cautious: Pytorch 2.3.0, request CUDA 11.8 or 12.1, my GPU support up to 12.3 
-    - [Pytorch Verification](https://github.com/BAI-Yeqi/PyTorch-Verification/tree/master)
-  - What not very helpful: Chrome Remote Desktop, Anyviewer (Prefer to use Mac pro to connect to the PC. Unfortunately, do not support MacOS)
-  - Considering to install ubuntu to make it simple, and for remote access. 
+**05-05-2024:** Order PC at 04-29 (4060 Ti 16G), arrive 04-30, Setup 05-05. Initial installation
+
+- What works
+  - Check GPU status: nvidia-smi
+  - Install: Chrome, Anaconda (Pytorch), Docker, Ollama, OpenWebUI, 
+  - Cuda: 12.1.  Cautious: Pytorch 2.3.0, request CUDA 11.8 or 12.1, my GPU support up to 12.3 
+  - [Pytorch Verification](https://github.com/BAI-Yeqi/PyTorch-Verification/tree/master)
+- What not very helpful: Chrome Remote Desktop, Anyviewer (Prefer to use Mac pro to connect to the PC. Unfortunately, do not support MacOS)
+- Considering to install ubuntu to make it simple, and for remote access. 
