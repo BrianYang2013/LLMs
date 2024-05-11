@@ -24,6 +24,11 @@ Record LLMs Journey
 
 - What does not work
   - Ubuntu does not have wifi. 
+  - Error message when reboot: 
+    - Failed to open \EFI\ubuntu\ 乱码 - invalid Parameter. 
+    - Failed to load image 乱码： invalidparameter
+    - start_image() returned invalid parameter, falling back to default loader
+  - 
 
 **05-05-2024:** Order PC at 04-29 (4060 Ti 16G), arrive 04-30, Setup 05-05. Initial installation
 
