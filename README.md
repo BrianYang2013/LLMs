@@ -1,12 +1,17 @@
 # LLMs
 Record LLMs Journey
 
+**05-10-2024:** Delete ubuntu
 
+- Delete ubuntu
+  - BIOS, BOOT, Set windows as 1st and Ubuntu as second. 
+  - DiskGenius, delete the 200g partition. extend to the main system partition. 
+  - Delete ubuntu folder under EFI, in the 100m system(0). 
+- Pytorch - [Quickstart](https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html)
 
 **05-07-2024:** Make CUDA work, install ubuntu
 
 - What works
-
   - Install: Typora, Github Desktop
   - Re-install CUDA, cudnn_9.1.1_windows, Anaconda,
     - [A Step-by-Step Guide to Installing CUDA with PyTorch in Conda on Windows](https://medium.com/@harunijaz/a-step-by-step-guide-to-installing-cuda-with-pytorch-in-conda-on-windows-verifying-via-console-9ba4cd5ccbef)
@@ -21,7 +26,6 @@ Record LLMs Journey
       - [Pytorch Verification](https://github.com/BAI-Yeqi/PyTorch-Verification/tree/master)
   - [Install ubuntu 24.04](https://www.minitool.com/partition-disk/install-ubuntu-on-windows-11.html)
     - Can not find duel system option: bcdedit /set "{bootmgr}" path \EFI\ubuntu\grubx64.efi
-
 - What does not work
   - Ubuntu does not have wifi. 
   - Error message when reboot: 
