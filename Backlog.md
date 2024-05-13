@@ -2,6 +2,12 @@
 
 
 
+## Interesting topics
+
+- [ChatOllama](https://github.com/sugarforever/chat-ollama?tab=readme-ov-file)
+
+
+
 ## Infra
 
 Linux
@@ -17,4 +23,25 @@ Connectivity
 
 ## Pytorch
 
+
+
 ## LLMs
+
+[Ollama](https://github.com/ollama/ollama)
+
+- Llama3
+
+- Gemma: google deepmind
+- Mistral
+- codellama
+
+Evlauate
+
+- Winogrande:评估常识性推理的基准。
+- Arc challenge:一组小学科学问题。
+- HellaSwag:评估常识性推理的基准。
+
+
+
+
+

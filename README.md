@@ -1,6 +1,27 @@
 # LLMs
 Record LLMs Journey
 
+
+
+**05-12-2024:** Preparation and explore
+
+- Llama 3 ZH instruct: scomper/llama3-zh-inst:latest
+
+**05-11-2024:** Preparation and explore
+
+- Create [backlog](Backlog.md)
+- Evaluate tool TailScale
+  - Efficiently transfer file between PC and Mac
+  - issue: Company devices blocked TailScale. 
+  - issue: encoding issue with Chinese characters, including file names. Revise the windows setting: time & language, 
+  - issue: Can only transfer files not folder. Need to compress
+
+- Test small models
+  - OpenWebUI: via docker. 
+  - Ollama: llama3:latest, gemma, codellama:13b-python, 
+  - Need more memory: dolphin-mixtral:latest, llama3:70b-instruct-q2_K
+
+
 **05-10-2024:** Delete ubuntu
 
 - Delete ubuntu
@@ -27,14 +48,13 @@ Record LLMs Journey
   - [Install ubuntu 24.04](https://www.minitool.com/partition-disk/install-ubuntu-on-windows-11.html)
     - Can not find duel system option: bcdedit /set "{bootmgr}" path \EFI\ubuntu\grubx64.efi
 - What does not work
-  - Ubuntu does not have wifi. 
-  - Error message when reboot: 
+  - Ubuntu does not have wifi: Can not recognize R8125. Downloaded the driver from the official website。 Found a physical cable to install make, successfully uninstall the driver but failed to install R8125
+  - Error message when reboot. Can not find those files in \efi\ubuntu: 
     - Failed to open \EFI\ubuntu\ 乱码 - invalid Parameter. 
     - Failed to load image 乱码： invalidparameter
     - start_image() returned invalid parameter, falling back to default loader
-  - 
 
-**05-05-2024:** Order PC at 04-29 (4060 Ti 16G), arrive 04-30, Setup 05-05. Initial installation
+**05-05-2024:** Order PC on 04-29 with 4060 Ti 16G, arrive 04-30, Setup 05-05. Initial installation
 
 - What works
   - Check GPU status: nvidia-smi
