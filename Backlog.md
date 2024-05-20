@@ -2,9 +2,17 @@
 
 
 
+## 2024 Summer
+
+- [Docker 101 Tutorial]([Docker 101 Tutorial | Docker](https://www.docker.com/101-tutorial/))
+- Docker: [Overview of the get started guide]([Overview of the get started guide | Docker Docs](https://docs.docker.com/get-started/))
+- [PyTorch Tutorials]([Welcome to PyTorch Tutorials — PyTorch Tutorials 2.3.0+cu121 documentation](https://pytorch.org/tutorials/))
+
 ## Interesting topics
 
 - [ChatOllama](https://github.com/sugarforever/chat-ollama?tab=readme-ov-file)
+- [从 NLP 到 LLM]([从 NLP 到 LLM - 知乎 (zhihu.com)](https://www.zhihu.com/column/c_1465775160745324544))
+- [karpathy](https://github.com/karpathy)/**[llm.c](https://github.com/karpathy/llm.c)**
 
 
 
@@ -41,7 +49,7 @@ Evlauate
 - Arc challenge:一组小学科学问题。
 - HellaSwag:评估常识性推理的基准。
 
-
+LangChain
 
 
 

@@ -11,6 +11,7 @@ Record LLMs Journey
 **05-12-2024:** Preparation and explore
 
 - Llama 3 ZH instruct: scomper/llama3-zh-inst:latest
+- nvidia-smi -l 1: refresh GPU usage every second. 
 
 **05-11-2024:** Preparation and explore
 
@@ -26,6 +27,11 @@ Record LLMs Journey
   - Ollama: llama3:latest, gemma, codellama:13b-python, 
   - Need more memory: dolphin-mixtral:latest, llama3:70b-instruct-q2_K
 
+- Calculate the GPU memory for LLMs training and inference
+
+  - [[LLM]大模型显存计算公式与优化]([[LLM\]大模型显存计算公式与优化 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/687226668))
+
+  - [多大的显存能够满足主流大模型的训练开销？]([多大的显存能够满足主流大模型的训练开销？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/636721650))
 
 **05-10-2024:** Delete ubuntu
 
