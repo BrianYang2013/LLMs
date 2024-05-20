@@ -1,7 +1,12 @@
 # LLMs
 Record LLMs Journey
 
+**05-19-2024:** Test MPS on macbook pro
 
+- Created an virtual env on conda. Point vscode to that environment. 
+- [Pytorch Mac GPU 训练与测评](https://zhuanlan.zhihu.com/p/517699916). Need to fix a few issues
+  - Test function missed. Can be found at: https://github.com/pytorch/examples/blob/main/mnist/main.py
+  - python main.py --use_gpu : will receive 220.96 s vs 54.08 s , so MPS is about 4.09 times faster than CPU on MNIST
 
 **05-12-2024:** Preparation and explore
 
