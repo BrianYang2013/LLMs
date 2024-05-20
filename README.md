@@ -6,7 +6,8 @@ Record LLMs Journey
 - Created an virtual env on conda. Point vscode to that environment. 
 - [Pytorch Mac GPU 训练与测评](https://zhuanlan.zhihu.com/p/517699916). Need to fix a few issues
   - Test function missed. Can be found at: https://github.com/pytorch/examples/blob/main/mnist/main.py
-  - python main.py --use_gpu : will receive 220.96 s vs 54.08 s , so MPS is about 4.09 times faster than CPU on MNIST
+  - python mps_evaluation.py --use_gpu, Macbook pro with M1 chips: CPU 220.96 s, MPS 70.12 or 54.08s for 4 epoch. Quit big difference on the 2 runs, reason unknown.  provide about 3-4x on MNIST
+  - PC with 4060 ti, CPU 980.26 s, GPU119.42 s for 14 epoch, about 8x on MNIST. 
 
 **05-12-2024:** Preparation and explore
 
