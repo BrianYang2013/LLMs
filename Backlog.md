@@ -14,8 +14,6 @@
 - [从 NLP 到 LLM]([从 NLP 到 LLM - 知乎 (zhihu.com)](https://www.zhihu.com/column/c_1465775160745324544))
 - [karpathy](https://github.com/karpathy)/**[llm.c](https://github.com/karpathy/llm.c)**
 
-
-
 ## Infra
 
 Linux
