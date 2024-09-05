@@ -2,3 +2,5 @@ DS_Store
 Pytorch/data/
 
 /data
+.DS_Store
+Pytorch/.DS_Store
