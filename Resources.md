@@ -27,7 +27,16 @@
 # How to use LLMs
 
 - [How I Use "AI" - by Nicholas Carlini](Resorces/How I Use AI - by Nicholas Carlini.md)
+  - “Helping me learn” and “Automating boring tasks” => Test Driven Development? 
+
 - [Stanford_ECON295⧸CS323_I_2024_I_The_Age_of_AI,_Eric_Schmidt](Resources/Stanford_ECON295⧸CS323_I_2024_I_The_Age_of_AI,_Eric_Schmidt.txt)
 
 
 
+# General
+
+[Meta Blogs](Meta_blogs.md)
+
+- [Meta - Methods for adapting large language models](https://ai.meta.com/blog/adapting-large-language-models-llms/)
+
+- [Meta - To fine-tune or not to fine-tune](https://ai.meta.com/blog/when-to-fine-tune-llms-vs-other-techniques/)

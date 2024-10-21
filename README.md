@@ -1,6 +1,18 @@
 # LLMs
 Record LLMs Journey
 
+**10-20-2024**: Video to audio to script
+
+- Mac: Automator, define workflow. 
+- Script: 
+  - Video_to_audio.py: ffmpeg
+  - Audio_to_script.py: whisper. Or APP such as whisper notes to process one by one. 
+    - V2 can use options to introduce prompt (example) to add the punctuation. V3 and turbo failed with RuntimeError: Given groups=1, weight of size [1280, 128, 3], expected input[1, 80, 3000] to have 128 channels, but got 80 channels instead
+    - Obsidian: leverage Gemini flash 1.5 API, add punctuation, fix issues like Homonyms. 
+  - Summarize. Compare with manual baseline, evaluate OpenAI, Claude, Gemini flash 1.5
+
+**10-xx-2024**: Open_webui, openrouter, Obsidian(copilot chat, text generator)
+
 **05-19-2024:** Test MPS on macbook pro
 
 - Created an virtual env on conda. Point vscode to that environment. 
