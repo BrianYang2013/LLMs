@@ -58,19 +58,29 @@ Record LLMs Journey
 
 - What works
   - Install: Typora, Github Desktop
-  - Re-install CUDA, cudnn_9.1.1_windows, Anaconda,
+  
+  - Re-install CUDA 12.1.0, cudnn_9.1.1_windows, Anaconda,
+    
+    - ```
+      conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+      ```
+    
     - [A Step-by-Step Guide to Installing CUDA with PyTorch in Conda on Windows](https://medium.com/@harunijaz/a-step-by-step-guide-to-installing-cuda-with-pytorch-in-conda-on-windows-verifying-via-console-9ba4cd5ccbef)
+    
     - Find the right version: 
       - [Pytorch - Start locally](https://pytorch.org/get-started/locally/)
-      - Pytorch build: 2.3
+      - Pytorch build: 2.3 or 2.4.1
       - Compute Platform: CUDA 12.1
+    
     - Passed all verification
       - Check GPU Status: navidia-smi
       - [Update VS Code python interpreter](https://stackoverflow.com/questions/43351596/activating-anaconda-environment-in-vscode)
       - Anaconda-JupyterNotebook, and VS code: torch.cuda.is_available()
       - [Pytorch Verification](https://github.com/BAI-Yeqi/PyTorch-Verification/tree/master)
+    
   - [Install ubuntu 24.04](https://www.minitool.com/partition-disk/install-ubuntu-on-windows-11.html)
     - Can not find duel system option: bcdedit /set "{bootmgr}" path \EFI\ubuntu\grubx64.efi
+  
 - What does not work
   - Ubuntu does not have wifi: Can not recognize R8125. Downloaded the driver from the official website。 Found a physical cable to install make, successfully uninstall the driver but failed to install R8125
   - Error message when reboot. Can not find those files in \efi\ubuntu: 
