@@ -1,6 +1,8 @@
 # LLMs
 Record LLMs Journey
 
+10-21-2024: Reflection：我们并不存在真正的ground truth。同样的故事可以有不同的演绎，在不同的标准下，优劣难辨。所以语音到文本未必需要绝对的吻合，除非是法律或者需要逐字逐句核实的特殊场景。在教育领域里，适当的改写完全是合理的，可以产出更加流畅，逻辑，容易理解的文本。
+
 **10-20-2024**: Video to audio to script
 
 - Mac: Automator, define workflow. 
@@ -8,10 +10,11 @@ Record LLMs Journey
   - Video_to_audio.py: ffmpeg
   - Audio_to_script.py: whisper. Or APP such as whisper notes to process one by one. 
     - V2 can use options to introduce prompt (example) to add the punctuation. V3 and turbo failed with RuntimeError: Given groups=1, weight of size [1280, 128, 3], expected input[1, 80, 3000] to have 128 channels, but got 80 channels instead
+    - Whisper does not support Mac MPS devices. 
     - Obsidian: leverage Gemini flash 1.5 API, add punctuation, fix issues like Homonyms. 
   - Summarize. Compare with manual baseline, evaluate OpenAI, Claude, Gemini flash 1.5
 
-**10-xx-2024**: Open_webui, openrouter, Obsidian(copilot chat, text generator)
+**10-13-2024**: Open_webui, Rewrite, Obsidian(copilot chat, text generator)
 
 **05-19-2024:** Test MPS on macbook pro
 
