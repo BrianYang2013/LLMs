@@ -1,7 +1,22 @@
 # LLMs
 Record LLMs Journey
 
-10-21-2024: Reflection：我们并不存在真正的ground truth。同样的故事可以有不同的演绎，在不同的标准下，优劣难辨。所以语音到文本未必需要绝对的吻合，除非是法律或者需要逐字逐句核实的特殊场景。在教育领域里，适当的改写完全是合理的，可以产出更加流畅，逻辑，容易理解的文本。
+
+
+11-10-2024: 
+
+- Install iCloud app from Microsoft store. Only sync the iCloud documents 
+- Install Obsidian, sync to the iCloud Vaults
+- Clean up Ollama
+  - Ollama list, review and remove out dated models. Pull 3.2 3b, llama3.2-vision:11b-instruct-q8_0 (15.3/16G Dedicated GPU, 16.7/31.9 GPU). 
+  - llama3:70b-instruct-q2_K still works, but a little bit slow
+  - Use Ollama with any GGUF Model on HuggingFaceHub: ollama run hf.co/{username}/{repository}
+- Add local ollama model to Obsidian Copilot: 
+  - Model name: llama3.2-vision:11b-instruct-q8_0
+  - Provider: ollama
+  - Base URL: http://localhost:11434/
+
+**10-21-2024:** Reflection：我们并不存在真正的ground truth。同样的故事可以有不同的演绎，在不同的标准下，优劣难辨。所以语音到文本未必需要绝对的吻合，除非是法律或者需要逐字逐句核实的特殊场景。在教育领域里，适当的改写完全是合理的，可以产出更加流畅，逻辑，容易理解的文本。
 
 **10-20-2024**: Video to audio to script
 
