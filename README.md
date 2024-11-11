@@ -3,7 +3,7 @@ Record LLMs Journey
 
 
 
-11-10-2024: 
+**11-10-2024:** 
 
 - Install iCloud app from Microsoft store. Only sync the iCloud documents 
 - Install Obsidian, sync to the iCloud Vaults
@@ -11,6 +11,7 @@ Record LLMs Journey
   - Ollama list, review and remove out dated models. Pull 3.2 3b, llama3.2-vision:11b-instruct-q8_0 (15.3/16G Dedicated GPU, 16.7/31.9 GPU). 
   - llama3:70b-instruct-q2_K still works, but a little bit slow
   - Use Ollama with any GGUF Model on HuggingFaceHub: ollama run hf.co/{username}/{repository}
+  - qwen2.5:14b: 11.3/16G dedicated GPU
 - Add local ollama model to Obsidian Copilot: 
   - Model name: llama3.2-vision:11b-instruct-q8_0
   - Provider: ollama
