@@ -3,7 +3,7 @@
 
 
 
-**11-22-2024:** Summarize the local LLM
+**11-22-2024:** Summarization: Local LLM
 
 - GPU > Apple M chips. The key is the memory bandwidth, and core of GPU (or TFLOPS)
 - GPU: With same budget, 3-4 second hand GPU (like 3090) is the best choice. 
@@ -12,7 +12,7 @@
   - [Openrouter](https://openrouter.ai/) API for all open/close models
   - Sensitive personal data: 
     - Hardware: Apple (M1 + 16G) or GPU (4060 Ti 16G)
-    - Models: Local LLM 3.2 3B, 3.1 8B. The 70B model is on the borderline of usability. See below. 
+    - Models:  Llama3.2 3B, Llama3.1 8B. The 70B model is on the borderline of usability. llama3:70b-instruct-q2_K still work. 
 
 **11-10-2024:** 
 
