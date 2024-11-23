@@ -1,7 +1,18 @@
 # LLMs
-Record LLMs Journey
+## Record LLMs Journey
 
 
+
+**11-22-2024:** Summarize the local LLM
+
+- GPU > Apple M chips. The key is the memory bandwidth, and core of GPU (or TFLOPS)
+- GPU: With same budget, 3-4 second hand GPU (like 3090) is the best choice. 
+- Apple M chips: [Performance of llama.cpp on Apple Silicon M-series](https://github.com/ggerganov/llama.cpp/discussions/4167) shows M2 Ultra > M1 Ultra > M4 Max > M2 Max > M1 Max > M3 Max. 
+- A practical setup: 
+  - [Openrouter](https://openrouter.ai/) API for all open/close models
+  - Sensitive personal data: 
+    - Hardware: Apple (M1 + 16G) or GPU (4060 Ti 16G)
+    - Models: Local LLM 3.2 3B, 3.1 8B. 70B is hard. 
 
 **11-10-2024:** 
 
