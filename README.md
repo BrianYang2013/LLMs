@@ -18,7 +18,7 @@
 
 - Install iCloud app from Microsoft store. Only sync the iCloud documents 
 - Install Obsidian, sync to the iCloud Vaults
-- Clean up Ollama
+- Clean up Ollama, test with 4060 Ti (16G)
   - Ollama list, review and remove out dated models. Pull 3.2 3b, llama3.2-vision:11b-instruct-q8_0 (15.3/16G Dedicated GPU, 16.7/31.9 GPU). 
   - llama3:70b-instruct-q2_K still works, but a little bit slow
   - Use Ollama with any GGUF Model on HuggingFaceHub: ollama run hf.co/{username}/{repository}
