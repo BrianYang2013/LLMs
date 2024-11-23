@@ -12,7 +12,7 @@
   - [Openrouter](https://openrouter.ai/) API for all open/close models
   - Sensitive personal data: 
     - Hardware: Apple (M1 + 16G) or GPU (4060 Ti 16G)
-    - Models: Local LLM 3.2 3B, 3.1 8B. 70B is hard. 
+    - Models: Local LLM 3.2 3B, 3.1 8B. The 70B model is on the borderline of usability. See below. 
 
 **11-10-2024:** 
 
