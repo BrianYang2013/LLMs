@@ -1,7 +1,9 @@
 # LLMs
 ## Record LLMs Journey
 
+**11-29-2024**: Update 11-10-2024 experiments with eval rate, by 
 
+`ollama run --verbose MODEL_NAME PROMPT`
 
 **11-22-2024:** Summarization: Local LLM
 
@@ -18,13 +20,15 @@
 
 - Install iCloud app from Microsoft store. Only sync the iCloud documents 
 - Install Obsidian, sync to the iCloud Vaults
-- Clean up Ollama, test with 4060 Ti (16G)
+- Clean up Ollama
   - Ollama list, review and remove out dated models. Pull 3.2 3b, llama3.2-vision:11b-instruct-q8_0 (15.3/16G Dedicated GPU, 16.7/31.9 GPU). 
-  - llama3:70b-instruct-q2_K still works, but a little bit slow
+  - llama3:70b-instruct-q2_K still works, but only 1.84 tokens/s
   - Use Ollama with any GGUF Model on HuggingFaceHub: ollama run hf.co/{username}/{repository}
-  - qwen2.5:14b: 11.3/16G dedicated GPU: Fast. 
-  - qwen2.5-coder:32b-instruct-q4_K_S:  14.3/16G Dedicated GPU, 19.8/31.9 GPU: Decent. 
-  - qwen2.5-coder:32b-instruct-q6_K:  14.2/16G Dedicated GPU, 27.3/31.9 GPU. Slow but it works. 
+  - qwen2.5:14b: 11.3/16G dedicated GPU: Fast (26.98 tokens/s) 
+  - qwen2.5-coder:32b-instruct-q4_K_S:  14.3/16G Dedicated GPU, 19.8/31.9 GPU: Decent (4.39 tokens/s). 
+  - qwen2.5-coder:32b-instruct-q6_K:  14.2/16G Dedicated GPU, 27.3/31.9 GPU. Slow but it works (2.36 tokens/s). 
+  - mistral-nemo:12b-instruct-2407-fp16: 24GB, 1.69 tokens/s. 
+  - mistral-nemo:12b-instruct-2407-q8_0: 13GB, 11.56 tokens/s
 - Add local ollama model to Obsidian Copilot: 
   - Model name: llama3.2-vision:11b-instruct-q8_0
   - Provider: ollama
