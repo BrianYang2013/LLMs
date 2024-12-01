@@ -7,24 +7,26 @@
 
 **11-22-2024:** Summarization: Local LLM
 
-- GPU > Apple M chips. The key is the memory bandwidth, and core of GPU (or TFLOPS)
-- GPU: With same budget, 3-4 second hand GPU (like 3090) is the best choice. 
-- Apple M chips: [Performance of llama.cpp on Apple Silicon M-series](https://github.com/ggerganov/llama.cpp/discussions/4167) shows M2 Ultra > M1 Ultra > M4 Max > M2 Max > M1 Max > M3 Max. 
 - A practical setup: 
-  - [Openrouter](https://openrouter.ai/) API for all open/close models
-  - Sensitive personal data: 
-    - Hardware: Apple (M1 + 16G) or GPU (4060 Ti 16G)
-    - Models:  Llama3.2 3B, Llama3.1 8B. The 70B model is on the borderline of usability. llama3:70b-instruct-q2_K still work. 
+  - Any apple with M chip / 16G: Models <= 8B, such as Llama3.2 3B, Llama3.1 8B. 
+  - PC + GPU, 4090 / 2x 3090 with NVLINK / 2080 with modified 22G VRAM / 4060 Ti with 16G VRAM: Models <= 32B.  The 70B model is on the borderline of usability. llama3:70b-instruct-q2_K still work. 
+  - [Openrouter](https://openrouter.ai/) AP: For any close-source models, or 70B+ open-source models.
+- GPU > Apple M chips. The key is the memory bandwidth, and core of GPU (or TFLOPS)
+- GPU: With same budget, a few second-hand GPU (like 3090) with NVLINK is the best choice. 
+- Apple M chips: [Performance of llama.cpp on Apple Silicon M-series](https://github.com/ggerganov/llama.cpp/discussions/4167) shows M2 Ultra 76-CORE GPU (116%) > M2U-60 (101%) = M1U-64 (100%) > M4M-40 (88%) > M1U-48 (83%) > M3M-40 (72%) > M2M-38 (68%) > M2M-30 (60%) = M1M-32 (59%) > M3M-30 (56%) > M1M-24 (51%). 
 
 **11-10-2024:** 
 
 - Install iCloud app from Microsoft store. Only sync the iCloud documents 
 - Install Obsidian, sync to the iCloud Vaults
 - Clean up Ollama
-  - Ollama list, review and remove out dated models. Pull 3.2 3b, llama3.2-vision:11b-instruct-q8_0 (15.3/16G Dedicated GPU, 16.7/31.9 GPU). 
-  - llama3:70b-instruct-q2_K still works, but only 1.84 tokens/s
+  - Ollama list, review and remove out dated models. 
   - Use Ollama with any GGUF Model on HuggingFaceHub: ollama run hf.co/{username}/{repository}
+  - Test on llama family, qwen2.5 (coding), and mistral-nemo (General)
+  - llama3.2-vision:11b-instruct-q8_0 (15.3/16G Dedicated GPU, 16.7/31.9 GPU). 
+  - llama3:70b-instruct-q2_K still works, but only 1.84 tokens/s
   - qwen2.5:14b: 11.3/16G dedicated GPU: Fast (26.98 tokens/s) 
+  -  qwen2.5:32b-instruct-q3_K_S:  15.2/16G Dedicated GPU memory, 16.3/31.9 GPU memory, Fast (13.84 tokens/s)
   - qwen2.5-coder:32b-instruct-q4_K_S:  14.3/16G Dedicated GPU, 19.8/31.9 GPU: Decent (4.39 tokens/s). 
   - qwen2.5-coder:32b-instruct-q6_K:  14.2/16G Dedicated GPU, 27.3/31.9 GPU. Slow but it works (2.36 tokens/s). 
   - mistral-nemo:12b-instruct-2407-fp16: 24GB, 1.69 tokens/s. 
