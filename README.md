@@ -22,11 +22,11 @@
 - Clean up Ollama
   - Ollama list, review and remove out dated models. 
   - Use Ollama with any GGUF Model on HuggingFaceHub: ollama run hf.co/{username}/{repository}
-  - Test on llama family, qwen2.5 (coding), and mistral-nemo (General)
+- Test on llama family, qwen2.5 (coding), and mistral-nemo (General)
   - llama3.2-vision:11b-instruct-q8_0 (15.3/16G Dedicated GPU, 16.7/31.9 GPU). 
   - llama3:70b-instruct-q2_K still works, but only 1.84 tokens/s
   - qwen2.5:14b: 11.3/16G dedicated GPU: Fast (26.98 tokens/s) 
-  -  qwen2.5:32b-instruct-q3_K_S:  15.2/16G Dedicated GPU memory, 16.3/31.9 GPU memory, Fast (13.84 tokens/s)
+  - qwen2.5:32b-instruct-q3_K_S:  15.2/16G Dedicated GPU memory, 16.3/31.9 GPU memory, Fast (13.84 tokens/s)
   - qwen2.5-coder:32b-instruct-q4_K_S:  14.3/16G Dedicated GPU, 19.8/31.9 GPU: Decent (4.39 tokens/s). 
   - qwen2.5-coder:32b-instruct-q6_K:  14.2/16G Dedicated GPU, 27.3/31.9 GPU. Slow but it works (2.36 tokens/s). 
   - mistral-nemo:12b-instruct-2407-fp16: 24GB, 1.69 tokens/s. 
