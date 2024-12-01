@@ -1,9 +1,10 @@
 # LLMs
 ## Record LLMs Journey
 
-**11-29-2024**: Update 11-10-2024 experiments with eval rate, by 
+**11-29-2024**: 
 
-`ollama run --verbose MODEL_NAME PROMPT`
+- Update 11-10-2024 experiments with eval rate, by `ollama run --verbose MODEL_NAME PROMPT`
+- LM Studio 
 
 **11-22-2024:** Summarization: Local LLM
 
@@ -13,7 +14,17 @@
   - [Openrouter](https://openrouter.ai/) AP: For any close-source models, or 70B+ open-source models.
 - GPU > Apple M chips. The key is the memory bandwidth, and core of GPU (or TFLOPS)
 - GPU: With same budget, a few second-hand GPU (like 3090) with NVLINK is the best choice. 
-- Apple M chips: [Performance of llama.cpp on Apple Silicon M-series](https://github.com/ggerganov/llama.cpp/discussions/4167) shows M2 Ultra 76-CORE GPU (116%) > M2U-60 (101%) = M1U-64 (100%) > M4M-40 (88%) > M1U-48 (83%) > M3M-40 (72%) > M2M-38 (68%) > M2M-30 (60%) = M1M-32 (59%) > M3M-30 (56%) > M1M-24 (51%). 
+- Apple M chips: [Performance of llama.cpp on Apple Silicon M-series](https://github.com/ggerganov/llama.cpp/discussions/4167) . Assume M1 Ultra 64-Core GPU as 100% (token/s), we will have: M2 Ultra 76-CORE GPU (116%) > M2U-60 (101%) = M1U-64 (100%) > M4M-40 (88%) > M1U-48 (83%) > M3M-40 (72%) > M2M-38 (68%) > M2M-30 (60%) = M1M-32 (59%) > M3M-30 (56%) > M1M-24 (51%) > M4P-20 (47%). 
+- Good Article
+  - [Apple统一内存适合运行LLM？理想很丰满，现实很骨感](https://blog.hjc.im/apple-uma-for-llms-problems.html)
+  - [Running GGUFs on an M1 Ultra is an interesting experience coming from 4090.](https://www.reddit.com/r/LocalLLaMA/comments/16o4ka8/running_ggufs_on_an_m1_ultra_is_an_interesting/)
+  - [Running GGUFs on M1 Ultra: Part 2!](https://www.reddit.com/r/LocalLLaMA/comments/16oww9j/running_ggufs_on_m1_ultra_part_2/)
+
+
+**11-13-2024:** Command-line tools to monitor system resource usage
+
+- btop: Linux, macOS. Not support Mac GPU yet
+- asitop: macOS
 
 **11-10-2024:** 
 
